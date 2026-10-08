@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#161616">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <title>For You</title></head>
+<body>
+<div id="app">
+    <header>
+        <button id="musicBtn" class="music-btn">♫</button>
+        <audio
+                id="bgMusic"
+                src="music/Happy%20Birthday%20To%20You.mp3"
+                preload="auto">
+        </audio>
+        <b>FOR YOU</b>
+        <button id="share">↗</button>
+    </header>
+    <main id="screen"></main>
+    <nav>
+        <button data-route="home" class="active">⌂<small>HOME</small></button>
+        <button data-route="story">♡<small>STORY</small></button>
+        <button data-route="map">⌖<small>MAP</small></button>
+        <button data-route="letter">✉<small>LETTER</small></button>
+    </nav>
+</div>
+<div id="modal" class="hidden">
+    <div class="backdrop"></div>
+    <div id="modalCard"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
